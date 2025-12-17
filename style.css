@@ -1,0 +1,766 @@
+/*General Template CSS */
+* {
+    margin: 0; padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: black;
+    background: linear-gradient(rgba(255,255,255,0.4)),url(Images/background-chesee.jpg);
+
+}
+
+header{
+    background: #ffcc66;
+    padding: 20px 0;
+    position: sticky;
+    top: 0px;
+    z-index: 200;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+header h1{
+    margin-left: 80px;
+    font-size: 35px;
+}
+
+nav{
+    padding-right: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+nav a{
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: #333;
+}
+
+nav a:hover, nav a.active{
+    background: #333;
+    color: white;
+}
+
+
+.main{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.img-main{
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    color: black;
+    filter: brightness(80%);
+}
+
+.text-main{
+    margin-left: 45%;
+    width: 50%;
+    position: absolute;
+    top: 35%;
+    color: white;
+    filter: brightness(95%);
+}
+
+footer{
+    background: #ffcc66;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 10%;
+    
+}
+
+.clock {
+    background-color: #ffcc66;
+    padding: 10px 20px;
+    height: 30px;
+    font-size: 25px;
+    color: white;
+    text-align: end;
+    font-weight: bolder;
+}
+
+/*Home Page CSS */
+.about{
+    z-index: 10;
+    margin-top: 25px;
+    margin-left: 130;
+    width: 80%;
+    background: #ffcc66;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.about p{
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.about a{
+    text-decoration: none;
+    color: rgb(35, 101, 255);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.populer-container{
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    transform: translateY(1%), translateX(1%);
+    transition: all 0.4s ease;
+}
+
+.populer-container img{
+    width: 325px;
+    border: white 3px solid;
+    filter: brightness(100%);
+    border-radius: 5px;
+}
+
+.populer-container h3{
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 8px;
+    margin: 0;
+    border-radius: 5px;
+    
+}
+
+.populer-container:hover {
+    filter: brightness(70%);
+    transform: translateY(0);
+}
+
+.img-home{
+    object-fit: fill;
+    width: 100%;
+    height: 350px;
+    color: black;
+    filter: brightness(80%);
+    border-radius: 5px;
+}
+
+.img-populer{
+    object-fit: fill;
+    width: 100%;
+    height: 230px;
+    color: black;
+    filter: brightness(80%);
+    border-radius: 5px;
+}
+
+.head-populer{
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: -2px;
+    margin-left: 2px;
+}
+
+/*Sejarah Page CSS */
+.line{
+    display: flex;
+    flex-direction: column;
+    gap: 380px;
+    position: absolute;
+    width: 3px;
+    padding: 0;
+    z-index: 50;
+    margin-left: 625px;
+    margin-top: 300px;
+    border: #ffcc66 2px solid;
+    background-color: #ffcc66;
+    border-radius: 5px;
+}
+
+.line li{
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 4px solid #ffcc66;
+    border-radius: 50%;
+    transform: translate(-40%);
+}
+
+.list p{
+    text-align: justify;
+}
+
+.list video{
+    max-width: 1000px;
+    height: 350px;
+    width: 65%;
+    margin: 50px 0 100px 17.5%;
+    border: #ffcc66 5px solid;   
+    object-fit: fill;
+}
+
+.timeline{
+    max-width: 1000px;
+    height: 350px;
+    width: 65%;
+    margin: 50px auto;
+    position: relative;
+    border: #ffcc66 5px solid;
+    border-radius: 10px;
+}
+
+.timeline.satu{
+background: url("Images/mesopotamia.webp");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.timeline.dua{
+background: url("Images/rome.webp");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.timeline.tiga{
+background: url("Images/london.webp");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.timeline.empat{
+background: url("Images/1900.webp");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.timeline.lima{
+background: url("Images/2000.webp");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.list h2{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    color: #333;
+}
+
+.timeline h3{
+    margin-bottom: 20px;
+}
+
+.timeline-item{
+    width: 330px;
+    height: 200px;
+    align-items: center;
+    top: 20%;
+    position: absolute;
+    padding: 20px;
+    background: #ffcc66;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.timeline:hover{
+    transform: translateY(-5px);
+}
+
+.timeline-item.left{
+    margin-left: 4.5%;
+}
+
+.timeline-item.right{
+    margin-left: 50%;
+}
+
+/*Jenis Page CSS */
+.jeniskeju-countainer h2{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    color: #333;
+}
+
+.jeniskeju{
+    margin-left: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    row-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.keju{
+    background: #ffcc66;
+    border: #ffcc66 5px solid;
+    border-radius: 5px;
+    position: relative;
+    width: 350px;
+    transform: translateY(1%), translateX(1%);
+    transition: all 0.4s ease;
+}
+
+
+.keju h3{
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 8px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.keju:hover {
+    filter: brightness(70%);
+    transform: translateY(1%);
+}
+
+.img-keju{
+    object-fit: fill;
+    width: 100%;
+    height: 230px;
+    color: black;
+    filter: brightness(80%);
+    border-radius: 5px;
+}
+
+/*Page Jenis CSS */
+.pagejenis-countainer{
+    margin-top: 50px;
+    margin-left: 300px;
+    background-color: #ffcc66;
+    width: 700px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pagejenis  h2{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    color: #333;
+}
+
+.pagejenis img{
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 300px;
+    border: black solid;
+    border-radius: 5px;
+}
+
+.pagejenis p{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 50px 50px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/*manfaat page*/
+.manfaat-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.manfaat-container h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #333;
+}
+
+.manfaat-container video{
+    max-width: 1000px;
+    height: 350px;
+    width: 65%;
+    margin: 0 0 50px 17.5%;
+    border: #ffcc66 5px solid;   
+    object-fit: fill;
+}
+
+.manfaat{
+    max-width: 1000px;
+    width: 70%;
+    border-radius: 10px;
+    padding: 50px 30px;
+    margin: 0 auto;
+    background-blend-mode: darken;
+}
+
+details summary {
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+details p{
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*Olahan page */
+.container-olahan {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.container-olahan .judul{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+    color: #333;
+}
+
+.card-olahan {
+    background: #ffcc66;
+    color: black;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-olahan h2 {
+    font-weight: bolder;
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+.card-olahan p {
+    font-size: 18px;
+    margin: 0 0 15px;
+    text-align: justify;
+}
+
+.card-olahan img {
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/*Kontak Page */
+.contact-container {
+    display: flex; 
+    justify-content: space-between; 
+    max-width: 900px; 
+    margin: 50px auto; 
+    padding: 20px; 
+    background-color:#ffcc66; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    color: #000000;
+}
+
+.form-section {
+    flex: 1; 
+    margin-right: 20px;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.info-section {
+    flex: 1; 
+    padding-left: 100px;
+}
+.contact-icon {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px; 
+}
+
+.contact-container h1 {
+    color: #000000; 
+    text-align: center; 
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+
+.info-section h1 {
+    color: #000000; 
+    text-align: center; 
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px; 
+    color: #000000; 
+}
+
+
+.input_email, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    font-family: baby bumi;
+    letter-spacing: 1px;
+}
+
+
+.submit {
+    background-color: #087ff6; 
+    color: white;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    display: block; 
+    margin: 20px auto; 
+    font-family: baby bumi;
+    letter-spacing: 1px;
+}
+
+.submit:hover {
+    background-color: #01ec15; 
+}
+
+.info-section p {
+    margin: 10px 0; 
+    color: #000000; 
+    letter-spacing: 1px;
+}
+
+.countainer-review {
+    max-width: 900px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #ffcc66; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.countainer-review h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: #000000; 
+    letter-spacing: 2px;
+}
+
+.review-list {
+  margin-top: 10px;
+}
+
+.review-item {
+  background: #ffffff;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  border-left: 4px solid #c48a5b;
+  border-radius: 6px;
+  font-size: 17px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+}
+
+.review-item strong {
+  color: #4e2e1c;
+  font-size: 18px;
+}
+
+/*Pengaruh Keju di Dunia Page CSS */
+.cheese-impact {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fffbe6;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.cheese-impact h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #8B5E3C;
+}
+
+.cheese-impact p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #5C4033;
+    line-height: 1.6;
+}
+
+.asym-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-large {
+    flex: 2; 
+    background: #fff8d1;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    box-sizing: border-box;
+}
+
+.stat-large img {
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.stat-large h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #A0522D;
+}
+
+.stat-large p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.stat-large small {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+}
+
+.stat-right {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stat-small {
+    background: #fff8d1;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    box-sizing: border-box;
+    flex: 1; 
+}
+
+.stat-small img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.stat-small h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #A0522D;
+}
+
+.stat-small p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.stat-small small {
+    display: block;
+    margin-top: 8px;
+    font-size: 11px;
+    color: #888;
+}
+
+/*proses pembuata keju page */
+.cara-keju {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #f9f6f1;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.cara-keju h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #6b4c3b;
+}
+
+
+.step-list {
+    list-style: none; 
+    padding: 0;
+}
+
+.step-list li {
+    display: flex;       
+    gap: 15px;           
+    margin-bottom: 20px; 
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.foto-step {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.step-text {
+    font-size: 16px;
+}
+
+.cara-keju ul{
+    display: flex; 
+    flex-direction: column;      
+    gap: 15px;           
+    margin-bottom: 20px; 
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cara-keju ul li{
+    font-size: 16px;
+    margin-left: 20px;
+}
+

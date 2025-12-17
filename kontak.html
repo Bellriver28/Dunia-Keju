@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Dunia Keju</title>
+    <Meta Name="Genarator" content="Vscode">
+    <Meta Name="Author" content="Rivaldi">
+    <Meta Name="Keywords" content="Keju">
+    <Meta Name="Description" content="Website Tentang Keju">
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+            <h1>Dunia Keju</h1>
+            <nav>
+                <a href="homepage.html" >Home</a>
+                <a href="sejarahpage.html" >Sejarah</a>
+                <a href="jenispage.html">Jenis</a>
+                <a href="manfaatpage.html">Manfaat</a>
+                <a href="olahanpage.html">Olahan</a>
+                <a href="kontak.html" class="active">Kontak</a>
+            </nav>
+    </header>
+
+    <div class="main">
+        <img src="Images/Mainimg.jpg" alt="Keju" class="img-main">
+        <div class="text-main">
+            <h2>Selamat Datang Di Dunia Keju</h2>
+            <p>Website ini membahas sejarah, jenis, manfaat, dan olahan keju yang populer di seluruh dunia.
+            Keju adalah salah satu produk susu yang sudah ada sejak ribuan tahun yan lalu dan masih digemari hingga sekarang.</p>
+        </div>
+    </div>
+
+    <div class="clock" id="clock"></div>
+
+<div class="contact-container">
+        <div class="form-section">
+            <h1>Review My Website</h1>
+            <form id="review-form">
+                <label for="email">Email</label><br/>
+                <input class="input_email" type="email" id="email" name="email" placeholder="alamat email" required />
+                <br/>
+                <label for="message">Pesan</label><br/>
+                <textarea id="message" name="message" placeholder="Tulis pesan anda...." rows="4" cols="50" required></textarea>
+                <br/>
+                <input class="submit" type="submit" value="Kirim"/>
+            </form>
+        </div>
+        <div class="info-section">
+            <h1>Info Kontak</h1>
+            <div class="contact-info">
+                <img src="Images/hp-removebg-preview.png" alt="Phone Icon" class="contact-icon">
+                <p><strong>Telepon:</strong> (+62) 857-1628-6050</p>
+            </div>
+            <div class="contact-info">
+                <img src="Images/email-removebg-preview.png" alt="Email Icon" class="contact-icon">
+                <p><strong>Email:</strong> rivaldibachtiar28@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <img src="Images/alamat-removebg-preview.png" alt="Address Icon" class="contact-icon">
+                <p><strong>Alamat:</strong> Jl.Sawo, Tanggerang Selatan</p>
+            </div>
+        </div>
+    </div>
+    <div class="countainer-review">
+        <h2>Komentar Pengunjung</h2>
+        <div id="review-list">
+                <div class="review-item">
+                    <strong>Swan@gmail.com :</strong> Website ini keren banget!
+                </div>
+                <div class="review-item">
+                    <strong>Chesta@gmail.com :</strong> Website Ini Lengkap dengan berbagai informasi tentang keju!
+                </div>
+                <div class="review-item">
+                    <strong>Rapli@gmail.com :</strong> Website ini bagus dan informatif!
+                </div>
+                <div class="review-item">
+                    <strong>Rizky@gmail.com :</strong> Terima kasih atas informasinya tentang keju!
+                </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Dunia Keju | Dibuat Oleh Muhammad Rivaldi Bachiar 
+    </footer>
+<script src="form.js"></script>
+<script src="clock.js"></script>
+
+</body>
+</html>
